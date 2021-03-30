@@ -22,18 +22,27 @@ body {
 main {
   background-color: #E4EAF1;
   margin: 1rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   border-radius: 10px;
 }
 
 
-.skills-section {
+.section {
   max-width: 40rem;
   margin: 0 auto;
+  padding: 1rem;
+  padding-top: 0;
 }
 
 .section-title {
   font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.profile-pic-container {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .skills-container {
@@ -51,3 +60,76 @@ main {
   border-radius: 1.5rem;
   overflow: hidden;
 }
+
+.card {
+  border-radius: 5px;
+  background-color: #A2B5CD;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  margin-bottom: 1rem;
+}
+
+@media(min-width:768px) {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(50% - 2rem);
+    margin: 1rem auto;
+  }
+}
+
+.description {
+  padding: 0.5rem;
+}
+
+.description .title-decription {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Test Shine effect */
+/* Credit: https://jsfiddle.net/AntonTrollback/nqQc7/ */
+.character-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.character-card:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  pointer-events: none;
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.character-card:hover:after {
+  opacity: 1;
+  top: -45%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 1s, 1s, 0.20s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.character-card:active:after {
+  opacity: 0;
+}
+/* FIN Test Shine effect */

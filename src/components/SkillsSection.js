@@ -3,7 +3,7 @@ import SkillBox from './SkillBox'
 
 function SkillsSection() {
   return (
-    <div className="skills-section">
+    <div className="section">
       <div className="section-title centered-text">Skills</div>
       <div className="skills-container">
         <SkillBox img='html.png' desc='HTML'/>
