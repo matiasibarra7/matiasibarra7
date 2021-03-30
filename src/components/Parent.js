@@ -1,8 +1,14 @@
 import React from "react";
+import SkillsSection from "./SkillsSection";
 
-const Component = props => {
+function Component() {
   return (
-    <h1 className="centered-text">Ibarra Nahuel Matías CV web</h1>
+    <main>
+        <h1 className="centered-text title">Ibarra Nahuel Matías</h1>
+        
+        <SkillsSection />
+        
+    </main>
   );
 };
 
