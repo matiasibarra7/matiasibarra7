@@ -22,7 +22,7 @@ function LanguagesSection() {
           <div className="language">
 
             <div className="flag-container">
-              <img className="flag" src={`./matiasibarra7/images/languages/spanish.jpg`} alt='spanish' />
+              <img className="flag" src={`./images/languages/spanish.jpg`} alt='spanish' />
             </div>
 
             <div className="language-description">
