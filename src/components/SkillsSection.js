@@ -4,7 +4,8 @@ import SkillBox from './SkillBox'
 function SkillsSection() {
   return (
     <div className="section">
-      <div className="section-title centered-text">Skills</div>
+      <hr className="separator"/>
+      <div className="section-title centered-text">Habilidades</div>
       <div className="skills-container">
         <SkillBox img='html.png' desc='HTML'/>
         <SkillBox img='css.png' desc='CSS'/>

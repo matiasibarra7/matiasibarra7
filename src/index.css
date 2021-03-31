@@ -2,51 +2,98 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-bg-color: #1C2541;
+  --main-bg-color: #AFC0D4;
+  --section-bg-color: #D7E0EA;
+  --card-bg-color: #BCCBDC;
+  --light-icon: #222830;
+
+  --font-color: black;
+}
+
 body {
+  color: var(--font-color);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: #1C2541;
+  background-color: var(--body-bg-color);
+
 }
 
+.transi-color {
+  transition: background-color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.separator {
+  border: none;
+}
+
+.darkmode-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  right: 1.5rem;
+  top: 1.3rem;
+  width: 3rem;
+  height: 3rem;
+  color: #E0E000;  
+  background-color: var(--light-icon);
+  cursor: pointer;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+}
 
 .centered-text {
   text-align: center;
 }
 
-.title {
-  margin: 1rem;
-}
-
 main {
-  background-color: #E4EAF1;
-  margin: 1rem;
+  background-color: var(--main-bg-color);
+  margin: 0.5rem;
   min-height: calc(100vh - 2rem);
   border-radius: 10px;
 }
 
-
 .section {
   max-width: 40rem;
-  margin: 0 auto;
+  margin: 0 0.5rem;
   padding: 1rem;
   padding-top: 0;
+  background-color: var(--section-bg-color);
+  border-radius: 2rem;
+  transition: background-color 0.5s ease-out;
+}
+
+.bio-section figure {
+  display: flex;
+  align-items: center;
+}
+
+.bio-section figure img {
+  width: 100%;
+  border-radius:50%
+}
+
+.project-section {
+  max-width: 80rem;
 }
 
 .section-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin: 0.5rem;
-}
-
-.profile-pic-container {
-  border-radius: 50%;
-  overflow: hidden;
+  margin: 1rem;
+  border-bottom: 1px solid var(--font-color);
 }
 
 .skills-container {
   display: flex;
+  padding: 2rem 0;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -59,25 +106,20 @@ main {
   margin: 0.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
+  box-shadow: 0px 0px 10px rgb(150 150 150);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
 }
 
 .card {
   border-radius: 5px;
-  background-color: #A2B5CD;
-  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  background-color: var(--card-bg-color);
+  box-shadow: 0px 0px 10px rgb(150, 150, 150);
   margin-bottom: 1rem;
-}
-
-@media(min-width:768px) {
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: calc(50% - 2rem);
-    margin: 1rem auto;
-  }
 }
 
 .description {
@@ -87,6 +129,15 @@ main {
 .description .title-decription {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.fab.fa-github, .fa-linkedin {
+  margin: 0 0.5rem;
+}
+
+.fab.fa-github {
+  color: var(--font-color);
 }
 
 
@@ -133,3 +184,43 @@ main {
   opacity: 0;
 }
 /* FIN Test Shine effect */
+
+
+@media(min-width:768px) {
+  .bio-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bio-section .section-title{
+    width: 100%;
+  }
+
+  .bio-section figure {
+    width: 40%;
+  }
+
+  .bio-section .content {
+    font-size: 1.1rem;
+    width: calc(60% - 4rem);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(50% - 2rem);
+    margin: 1rem auto;
+  }
+
+  .section {
+    margin: 1rem auto;
+    max-width: 80rem;
+  }
+}

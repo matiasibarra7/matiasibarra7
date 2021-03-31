@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 function ProjectsSection() {
   return (
     <div className="section project-section">
+      <hr className="separator"/>
       <div className="section-title centered-text">Proyectos</div>
       <div className="projects-container">
         <ProjectCard 
@@ -25,16 +26,16 @@ function ProjectsSection() {
         <ProjectCard 
           pageUrl='https://github.com/matiasibarra7/grupo_12_middo-naito'
           pageImg='middo.png'
-          title='Middo Naito'
+          title='Middo Naito E-Commerce'
           description='Projecto grupal realizado como trabajo integrador en el curso FullStack de Digital House. E-commerce realizado en con Node,
-          Express, MySQL.'
+          Express, EJS y MySQL.'
         />
 
         <ProjectCard 
           pageUrl='https://matiasibarra7.github.io/college-correlaties-utn-isi/'
           pageImg='sim-isi.png'
           title='Simulador académico ISI'
-          description='Single page en React con carga dinámica de situación académica de plan de estudio de estudiante de Ing. en Sistemas de Información, UTN-FRRe'
+          description='Single page en React con carga dinámica de situación académica utilizando el plan de estudio la carrera Ingeniería en Sistemas de Información, UTN-FRRe'
         />
       </div>
     </div>
