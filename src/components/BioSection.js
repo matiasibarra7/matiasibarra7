@@ -8,7 +8,7 @@ function BioSection() {
         <div className="section-title centered-text">Perfil Profesional</div>
         <figure style={{margin: "0"}}>
           <div></div>
-          <img src="/images/young-mati.jpg" alt="Ibarra"/>
+          <img src="./images/young-mati.jpg" alt="Ibarra"/>
         </figure>
     
         <div className="content">

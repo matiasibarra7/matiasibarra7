@@ -4,7 +4,7 @@ Soy estudiante de Ingeniería en Sistemas y Full Stack Developer, aunque tengo m
 
 Me gustan los videojuegos 👾, el cine 🎦 y el café ☕.
 
-<!-- ¡Visita mi página de presentación para saber más de mi!
+¡Visita mi página de presentación para saber más de mi!
 
-[Nahuel Ibarra](https://) -->
+[Nahuel Ibarra](https://matiasibarra7.github.io/matiasibarra7/)
 
