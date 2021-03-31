@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BioSection from "./BioSection";
 import ContactSection from "./ContactSection";
+import LanguagesSection from "./LanguagesSection";
 import ProjectsSection from "./ProjectsSection";
 import SkillsSection from "./SkillsSection";
 
@@ -39,6 +40,8 @@ function Component() {
         <BioSection />
 
         <SkillsSection />
+
+        <LanguagesSection />
 
         <ProjectsSection />
 

@@ -31,6 +31,11 @@ body {
   border: none;
 }
 
+.link-unstyle {
+  text-decoration: none;
+  color: inherit;
+}
+
 .darkmode-icon {
   position: absolute;
   display: flex;
@@ -41,11 +46,15 @@ body {
   top: 1.3rem;
   width: 3rem;
   height: 3rem;
-  color: #E0E000;  
+  color: #D7E0EA;
   background-color: var(--light-icon);
   cursor: pointer;
-  /* border: 2px solid black; */
   border-radius: 50%;
+  transition: color 0.5s ease-out;
+}
+
+.darkmode-icon:hover {
+  color: #E0E000;
 }
 
 .centered-text {
@@ -109,6 +118,42 @@ main {
   box-shadow: 0px 0px 10px rgb(150 150 150);
 }
 
+.languages-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language {
+  display: flex;
+  width: 100%;
+  margin: 1rem auto;
+  min-height: 7rem;
+  padding: 0.5rem;
+
+  border-radius: 5px;
+  background-color: var(--card-bg-color);
+
+  /* background-color: greenyellow; */
+  /* border: 1px solid red; */
+}
+
+.language-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.flag-container {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 6rem;
+  height: 4rem;
+}
+
 .contact-container {
   display: flex;
   justify-content: center;
@@ -126,7 +171,7 @@ main {
   padding: 0.5rem;
 }
 
-.description .title-decription {
+.description .title-decription, .title-languague {
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
@@ -140,6 +185,25 @@ main {
   color: var(--font-color);
 }
 
+.fa-linkedin {
+  position: relative;
+}
+
+.fa-linkedin::before {
+  position: relative;
+  z-index: 2;
+}
+
+.fa-linkedin::after {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.4rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  z-index: 1;
+  background: #D7E0EA;
+}
 
 /* Test Shine effect */
 /* Credit: https://jsfiddle.net/AntonTrollback/nqQc7/ */
@@ -148,7 +212,7 @@ main {
   overflow: hidden;
 }
 
-.character-card:after {
+.character-card::after {
   content: "";
   position: absolute;
   top: -110%;
@@ -169,7 +233,7 @@ main {
   );
 }
 
-.character-card:hover:after {
+.character-card:hover::after {
   opacity: 1;
   top: -45%;
   left: -30%;
@@ -180,7 +244,7 @@ main {
 
 /* Active state */
 
-.character-card:active:after {
+.character-card:active::after {
   opacity: 0;
 }
 /* FIN Test Shine effect */
@@ -222,5 +286,10 @@ main {
   .section {
     margin: 1rem auto;
     max-width: 80rem;
+  }
+
+  .language {
+    width: calc(50% - 2rem);
+    margin: 1rem auto;
   }
 }
