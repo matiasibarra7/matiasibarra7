@@ -69,7 +69,7 @@ main {
 }
 
 .section {
-  max-width: 40rem;
+  max-width: 80rem;
   margin: 0 0.5rem;
   padding: 1rem;
   padding-top: 0;
@@ -86,10 +86,6 @@ main {
 .bio-section figure img {
   width: 100%;
   border-radius:50%
-}
-
-.project-section {
-  max-width: 80rem;
 }
 
 .section-title {
@@ -187,6 +183,7 @@ main {
 
 .fa-linkedin {
   position: relative;
+  color: #0e76a8
 }
 
 .fa-linkedin::before {
@@ -203,6 +200,28 @@ main {
   height: 3.1rem;
   z-index: 1;
   background: #D7E0EA;
+}
+
+.cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  font-size: 3.6rem;
+}
+
+.fa-file {
+  position: relative;
+}
+
+.fa-file::after {
+  content: "CV";
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  top: 1.5rem;
+  left: 0.6rem;
 }
 
 /* Test Shine effect */
@@ -271,6 +290,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
   }
 
   .projects-container {
