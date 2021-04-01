@@ -23,8 +23,7 @@ body {
 }
 
 .transi-color {
-  transition: background-color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .separator {
@@ -50,7 +49,7 @@ body {
   background-color: var(--light-icon);
   cursor: pointer;
   border-radius: 50%;
-  transition: color 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .darkmode-icon:hover {
@@ -75,7 +74,7 @@ main {
   padding-top: 0;
   background-color: var(--section-bg-color);
   border-radius: 2rem;
-  transition: background-color 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .bio-section figure {
@@ -311,5 +310,9 @@ main {
   .language {
     width: calc(50% - 2rem);
     margin: 1rem auto;
+  }
+
+  .darkmode-icon {
+    position: fixed;
   }
 }
