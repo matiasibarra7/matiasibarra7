@@ -72,7 +72,7 @@ function Component() {
         <span className="float-button darkmode-icon shading" onClick={changeTheme} title={darkMode? "Lights on!" : "Lights out!"}><i className="far fa-lightbulb"></i></span>
         
         <hr className="separator"/>
-        <h1 className="centered-text title">Matías Ibarra</h1>
+        <h1 className="centered-text title">Matías Nahuel Ibarra</h1>
 
         <BioSection title={i18next.t('bioTitle')} bio1={i18next.t('bio1')} bio2={i18next.t('bio2')} bio3={i18next.t('bio3')} />
 

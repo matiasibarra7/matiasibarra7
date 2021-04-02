@@ -41,7 +41,7 @@ body {
 
 .float-button {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +65,9 @@ body {
   bottom: 1.3rem;
 }
 
-.darkmode-icon:hover {
+/* .darkmode-icon:hover {
   color: #E0E000;
-}
+} */
 
 .centered-text {
   text-align: center;
@@ -334,5 +334,25 @@ main {
   .darkmode-icon {
     bottom: auto;
     top: 1.3rem;
+  }
+
+  .darkmode-icon::before, .change-lang-icon::before {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    background-color: grey;
+    padding: 2px 6px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px #0a0a0a;
+  }
+
+  .darkmode-icon:hover::before {
+    content: "Dark mode";
+    left: -6.5rem;
+  }
+
+  .change-lang-icon:hover::before {
+    content: "Cambiar idioma";
+    left: -8.5rem;
   }
 }
