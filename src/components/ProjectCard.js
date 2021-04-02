@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-      <div className="card character-card transi-color">
+      <div className="card character-card transi-color shading">
         <a href={props.pageUrl} target="_blank" rel="noreferrer" className="link-unstyle">
           <div className="image-project">
             <img src={`./images/projects/${props.pageImg}`} alt={props.title} style={{ width:"100%" }}/>

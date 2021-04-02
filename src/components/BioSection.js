@@ -1,21 +1,22 @@
 import React from "react";
 
-function BioSection() {
+function BioSection(props) {
   return (
-    <div className="section bio-section">
+    <div className="section bio-section shading">
         <hr className="separator"/>
 
-        <div className="section-title centered-text">Perfil Profesional</div>
+        <div className="section-title centered-text">{props.title}</div>
         <figure style={{margin: "0"}}>
           <div></div>
-          <img src="./images/young-mati.jpg" alt="Ibarra"/>
+          <img src="./images/young-mati.jpg" alt="Ibarra" className="shading"/>
         </figure>
     
         <div className="content">
-          <p>Full Stack Developer con especial afinidad al lado Front-end. <br/> <br/>
-          Comencé mi formación como estudiante de Ingeniería en Sistemas de Información en la UTN y mi primera experiencia en desarrollo web fue en el puesto de Front-end Developer durante 6 meses.
-          Luego, fui seleccionado y obtuve una beca para el curso de Programación Web Full Stack, dictado por Digital House. <br/> <br/>
-          Hoy continúo con el desarrollo de mi formación mediante cursos online y estoy a la búsqueda de oportunidades para poder alcanzar y demostrar la totalidad de mi potencial.</p>
+          <p>
+            {props.bio1}  <br/><br/>
+            {props.bio2}  <br/><br/>
+            {props.bio3}
+          </p>
         </div>
     </div>
   );
