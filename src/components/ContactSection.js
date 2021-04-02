@@ -1,10 +1,10 @@
 import React from "react";
 
-function ContactSection() {
+function ContactSection(props) {
   return (
-    <div className="section">
+    <div className="section shading">
       <hr className="separator"/>
-      <div className="section-title centered-text">Contacto</div>
+      <div className="section-title centered-text">{props.title}</div>
       <div className="contact-container">
           <a href="https://drive.google.com/file/d/1JL-RWqG253OW_JknypJ5iZdIvTUrymZk/view?usp=sharing" target="_blank" rel="noreferrer" title="LinkedIn" className="link-unstyle cv-container">
             <i className="far fa-file"></i>

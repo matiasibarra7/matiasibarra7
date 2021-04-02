@@ -1,11 +1,11 @@
 import React from "react";
 import SkillBox from './SkillBox'
 
-function SkillsSection() {
+function SkillsSection(props) {
   return (
     <div className="section">
       <hr className="separator"/>
-      <div className="section-title centered-text">Habilidades</div>
+      <div className="section-title centered-text">{props.title}</div>
       <div className="skills-container">
         <SkillBox img='html.png' desc='HTML'/>
         <SkillBox img='css.png' desc='CSS'/>
