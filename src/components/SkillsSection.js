@@ -3,7 +3,7 @@ import SkillBox from './SkillBox'
 
 function SkillsSection(props) {
   return (
-    <div className="section">
+    <div className="section shading">
       <hr className="separator"/>
       <div className="section-title centered-text">{props.title}</div>
       <div className="skills-container">
