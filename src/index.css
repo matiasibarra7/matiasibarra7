@@ -27,7 +27,7 @@ body {
 }
 
 .shading {
-  box-shadow: 1px 1px 4px #0a0a0a;
+  box-shadow: 0 1px 2px #0a0a0a;
 }
 
 .separator {
@@ -86,7 +86,7 @@ main {
   padding: 1rem;
   padding-top: 0;
   background-color: var(--section-bg-color);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   transition: all 0.5s ease-out;
 }
 
