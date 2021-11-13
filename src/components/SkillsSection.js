@@ -10,6 +10,7 @@ function SkillsSection(props) {
         <SkillBox img='html.png' desc='HTML'/>
         <SkillBox img='css.png' desc='CSS'/>
         <SkillBox img='js.png' desc='Javascript'/>
+        <SkillBox img='vue.png' desc='VueJs'/>
         <SkillBox img='react.jpg' desc='ReactJs'/>
         <SkillBox img='node.png' desc='NodeJs'/>
         <SkillBox img='mysql.png' desc='MySQL'/>

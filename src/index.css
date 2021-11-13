@@ -120,6 +120,7 @@ main {
 }
 
 .skill-box {
+  position: relative;
   max-width: 5rem;
   max-height: 5rem;
   background-color: white;
@@ -343,16 +344,24 @@ main {
     background-color: grey;
     padding: 2px 6px;
     border-radius: 1rem;
-    box-shadow: 1px 1px 4px #0a0a0a;
+    box-shadow: 0px 1px 2px #0a0a0a;
+    transition: all 1s ease-in-out;
   }
 
-  .darkmode-icon:hover::before {
+  .darkmode-icon::before {
     content: "Dark mode";
     left: -6.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
   }
 
-  .change-lang-icon:hover::before {
+  .change-lang-icon::before {
     content: "Cambiar idioma";
     left: -8.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
   }
+
+  .darkmode-icon:hover::before { opacity: 1; }
+  .change-lang-icon:hover::before { opacity: 1; }
 }

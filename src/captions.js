@@ -1,8 +1,8 @@
 module.exports = {
   spa: {
     bioTitle: "Perfil Profesional",
-    bio1: "Full Stack Developer con especial afinidad al lado Front-end.",
-    bio2: "Comencé mi formación profesional como estudiante de Ingeniería en Sistemas de Información en la UTN y mi primera experiencia en desarrollo web fue en el puesto de Front-end Developer durante 6 meses. Luego, fui seleccionado y obtuve una beca para el curso de Programación Web Full Stack, dictado por Digital House.",
+    bio1: "Front-end Developer con conocimientos de Back-end en NodeJs.",
+    bio2: "Comencé mi formación profesional como estudiante de Ingeniería en Sistemas de Información en la UTN y mi primera experiencia en desarrollo web fue en el puesto de Front-end Developer durante 6 meses. Luego, fui seleccionado y obtuve una beca para el curso de Programación Web Full Stack, dictado por Digital House",
     bio3: "Hoy continúo con el desarrollo de mi formación mediante cursos online y estoy a la búsqueda de oportunidades para poder alcanzar y demostrar la totalidad de mi potencial.",
   
     skillsTitle: "Habilidades",
@@ -27,8 +27,8 @@ module.exports = {
 
   eng: {
     bioTitle: "Professional profile",
-    bio1: "Full Stack Developer with special affinity to the Front-end development.",
-    bio2: "I started my professional formation as an Information Systems Engineering student at UTN and my first job experience in web development was in the front-end developer position for 6 months. Later, I was selected and obtained a scholarship for the Full Stack Web Programming course, dictated by Digital House.",
+    bio1: "Front-end Developer with acknowledge of Back-end with NodeJs.",
+    bio2: "I started my professional formation as an Information Systems Engineering student at UTN and my first job experience in web development was in the front-end developer position for 6 months. Later, I was selected and obtained a scholarship for the Full Stack Web Programming course, dictated by Digital House",
     bio3: "Today I continue with the development of my training through online courses and I am looking for opportunities to reach and show all my potential.",
   
     skillsTitle: "Skills",
