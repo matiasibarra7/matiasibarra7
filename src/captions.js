@@ -27,7 +27,7 @@ module.exports = {
 
   eng: {
     bioTitle: "Professional profile",
-    bio1: "Front-end Developer with acknowledge of Back-end with NodeJs.",
+    bio1: "Front-end Developer with knowledge of Back-end with NodeJs.",
     bio2: "I started my professional formation as an Information Systems Engineering student at UTN and my first job experience in web development was in the front-end developer position for 6 months. Later, I was selected and obtained a scholarship for the Full Stack Web Programming course, dictated by Digital House",
     bio3: "Today I continue with the development of my training through online courses and I am looking for opportunities to reach and show all my potential.",
   
