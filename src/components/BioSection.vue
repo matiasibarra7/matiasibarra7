@@ -18,7 +18,7 @@
     <div class="content">
       <p>
         {{ props.bio1 }}  <br/><br/>
-        {{ props.bio2 }} <a href="https://drive.google.com/file/d/1z9y4GgKCccH3WelB53xbHlc_Cn_fesx-/view?usp=sharing" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt" style="font-size: 0.9rem"></i></a>.  <br/><br/>
+        {{ props.bio2 }} <a class="shiny" href="https://drive.google.com/file/d/1z9y4GgKCccH3WelB53xbHlc_Cn_fesx-/view?usp=sharing" target="_blank" rel="noreferrer"><i class="fas fa-external-link-alt" style="font-size: 0.9rem"></i></a>.  <br/><br/>
         {{ props.bio3 }}
       </p>
     </div>

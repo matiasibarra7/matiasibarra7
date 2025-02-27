@@ -10,7 +10,7 @@ const props = defineProps<{ title: string }>()
     <hr class="separator"/>
     <div class="section-title centered-text">{{ props.title }}</div>
     <div class="contact-container">
-      <a href="https://drive.google.com/file/d/1JL-RWqG253OW_JknypJ5iZdIvTUrymZk/view?usp=sharing" target="_blank" rel="noreferrer" title="LinkedIn" class="link-unstyle cv-container">
+      <a href="https://drive.google.com/file/d/1Dk_bFqoBb_uz-i42vTEE4jjDsLfTXpBY/view?usp=sharing" target="_blank" rel="noreferrer" title="CV" class="link-unstyle cv-container">
         <i class="far fa-file"></i>
       </a>
       <a href="https://github.com/matiasibarra7" target="_blank" rel="noreferrer" title="Github"><i class="fab fa-github"></i></a>

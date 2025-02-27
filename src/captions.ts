@@ -53,11 +53,11 @@ const captions: Captions = {
   
     langTitle: "Idiomas",
     langEnTitle: "Inglés",
-    langLvl: "Nivel (CEFR) - C1 Advanced",
+    langLvl: "C1 Advanced - (CEFR)",
     langCred: "Ver credencial",
   
     langEsTitle: "Español",
-    langEsLvl: "Nivel - Nativo",
+    langEsLvl: "Nativo",
     
     projectsTitle: "Proyectos",
     projectDescFF: "Proyecto realizado con React para prácticar en el consumo de API y hooks de estado y efecto. Permite buscar a un personaje de saga Final Fantasy y ver sobre él",
@@ -79,7 +79,7 @@ const captions: Captions = {
   
     langTitle: "Languages",
     langEnTitle: "English",
-    langLvl: "Level (CEFR) - C1 Advanced",
+    langLvl: "C1 Advanced - (CEFR)",
     langCred: "See credential",
   
     langEsTitle: "Spanish",

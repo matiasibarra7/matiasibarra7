@@ -13,14 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
 
 body {
   margin: 0;
@@ -58,6 +50,12 @@ button:focus-visible {
   padding: 2em;
 }
 
+
+
+/* Debajo estilos anteriores */
+/* Debajo estilos anteriores */
+/* Debajo estilos anteriores */
+/* Debajo estilos anteriores */
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -65,40 +63,39 @@ button:focus-visible {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a.shiny {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  transition: color 0.2s ease-in-out;
+}
+a.shiny:hover {
+  color: #535bf2;
 }
 
-
-
-
-
-
-/* Debajo estilos anteriores */
-/* Debajo estilos anteriores */
-/* Debajo estilos anteriores */
-/* Debajo estilos anteriores */
 * {
   box-sizing: border-box;
 }
 
 :root {
   --body-bg-color: #fff;
-  --main-bg-color: #070808;
-  --section-bg-color: #D7E0EA;
+  --main-bg-color: #AFC0D4;
+  --section-bg-color: #EAEAEA;
   --card-bg-color: #BCCBDC;
+  --card-bg-color: #CECECE;
   --light-icon: #222830;
 
   --font-color: black;
+}
+
+:root.dark-mode {
+  --body-bg-color: #242424;
+  --main-bg-color: #202020;
+  --section-bg-color: #313236;
+  --card-bg-color: #44454B;
+  --light-icon: #333C48;
+
+  --font-color: #C8CBCF;
 }
 
 body {
@@ -116,7 +113,8 @@ body {
 }
 
 .shading {
-  box-shadow: 0 1px 2px #0a0a0a;
+  /* box-shadow: 0 1px 2px #0a0a0a; */
+  box-shadow: 1px 1px 1px #858585;
 }
 
 .separator {
@@ -216,7 +214,8 @@ main {
   background-color: white;
   display: inline-block;
   margin: 0.5rem;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
+  border-radius: 7px;
   overflow: hidden;
 }
 
@@ -388,12 +387,12 @@ main {
   }
 
   .bio-section figure {
-    width: 40%;
+    width: 30%;
   }
 
   .bio-section .content {
     font-size: 1.1rem;
-    width: calc(60% - 4rem);
+    width: calc(70% - 4rem);
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -436,7 +435,7 @@ main {
     color: white;
     background-color: grey;
     padding: 2px 6px;
-    border-radius: 1rem;
+    border-radius: 4px;
     box-shadow: 0px 1px 2px #0a0a0a;
     transition: all 1s ease-in-out;
   }

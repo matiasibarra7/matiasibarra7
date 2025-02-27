@@ -15,7 +15,17 @@
       :bio3="t('bio3')"
     />
 
-    <SkillsSection
+    <SkillsAndLangSection 
+      :titleSkills="t('skillsTitle')" 
+      :titleLang="t('langTitle')" 
+      :langEn="t('langEnTitle')"
+      :langLvl="t('langLvl')"
+      :langCred="t('langCred')"
+      :langEs="t('langEsTitle')"
+      :langEsLvl="t('langEsLvl')"
+    />
+
+    <!-- <SkillsSection
       :title="t('skillsTitle')" 
     />
 
@@ -26,7 +36,7 @@
       :langCred="t('langCred')"
       :langEs="t('langEsTitle')"
       :langEsLvl="t('langEsLvl')"
-    />
+    /> -->
 
     <ProjectsSection
       :title="t('projectsTitle')"
@@ -48,8 +58,9 @@
 <script setup lang="ts">
   import { onMounted, ref } from 'vue'
   import BioSection from './components/BioSection.vue';
-  import SkillsSection from './components/SkillsSection.vue';
-  import LangSection from './components/LangSection.vue';
+  // import SkillsSection from './components/SkillsSection.vue';
+  // import LangSection from './components/LangSection.vue';
+  import SkillsAndLangSection from './components/SkillsAndLangSection.vue';
   import ProjectsSection from './components/ProjectsSection.vue';
   import ContactSection from './components/ContactSection.vue';
   import { useTranslation } from "i18next-vue";
@@ -79,24 +90,29 @@
   const changeColors = () => {
     darkMode.value = !darkMode.value
 
+    
     if (!darkMode.value) {
-      document.documentElement.style.setProperty('--body-bg-color', '#fff')
-      document.documentElement.style.setProperty('--main-bg-color', '#AFC0D4')
-      document.documentElement.style.setProperty('--section-bg-color', '#D7E0EA')
-      document.documentElement.style.setProperty('--card-bg-color', '#BCCBDC')
-      document.documentElement.style.setProperty('--font-color', 'black')
+      document.documentElement.classList.remove('dark-mode')
 
-      document.documentElement.style.setProperty('--light-icon', '#222830')
-    } else {
-      document.documentElement.style.setProperty('--body-bg-color', '#242424')
-
-      document.documentElement.style.setProperty('--main-bg-color', '#202020')
-      document.documentElement.style.setProperty('--section-bg-color', '#313236')
-
-      document.documentElement.style.setProperty('--card-bg-color', '#44454B')
-      document.documentElement.style.setProperty('--font-color', '#C8CBCF')
+      // document.documentElement.style.setProperty('--body-bg-color', '#fff')
+      // document.documentElement.style.setProperty('--main-bg-color', '#AFC0D4')
+      // document.documentElement.style.setProperty('--section-bg-color', '#D7E0EA')
+      // document.documentElement.style.setProperty('--card-bg-color', '#BCCBDC')
+      // document.documentElement.style.setProperty('--light-icon', '#222830')
       
-      document.documentElement.style.setProperty('--light-icon', '#333C48')
+      // document.documentElement.style.setProperty('--font-color', 'black')
+    } else {
+      document.documentElement.classList.add('dark-mode')
+
+      // document.documentElement.style.setProperty('--body-bg-color', '#242424')
+
+      // document.documentElement.style.setProperty('--main-bg-color', '#202020')
+      // document.documentElement.style.setProperty('--section-bg-color', '#313236')
+
+      // document.documentElement.style.setProperty('--card-bg-color', '#44454B')
+      // document.documentElement.style.setProperty('--font-color', '#C8CBCF')
+      
+      // document.documentElement.style.setProperty('--light-icon', '#333C48')
 
     }
   }
